@@ -1,13 +1,15 @@
+package escola;
+
 public class Funcionario {
 
     private String nome;
     private int idade;
-    private long cpf;
+    private int salario ;
 
-    public Funcionario(string nome, int idade, long cpf){
+    public Funcionario(String nome, int idade, int salario){
         this.nome = nome;
         this.idade = idade;
-        this.cpf = cpf;
+        this.salario = salario;
 
     }
     public String getnome(){
@@ -25,24 +27,25 @@ public class Funcionario {
         this.idade = idade;
 
     }
-    public long getcpf(){
-        return cpf;
+    public long getsalario(){
+        return salario;
 
 
     }
-    public void setcpf(long cpf){
+    public void setsalario(int salario){
 
-        this.cpf = cpf;
-
-    }
-
-    public void trabalhando(){
-
-        System.out.println("Funcionario esta trabalhando");
+        this.salario = salario;
 
     }
-    public void descanso(){
-        System.out.println(" esta na hora de descanso");
+
+    public void Fazer(){
+
+        System.out.println(" Agora esta trabalhando");
+
+    }
+    public void descanso(String nome){
+        this.nome = nome;
+        System.out.println(this.nome + " Agora esta na hora do almoco");
     }
 
 }

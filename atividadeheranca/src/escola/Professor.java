@@ -1,18 +1,20 @@
+package escola;
+
 public class Professor extends Funcionario {
     
-  private int data;
+  private String materia;
 
-  public Professor(String nome, int idade, long cpf, int data){
-    super(nome, idade, cpf);
-    this.data = data;
+  public Professor(String nome, int idade, int salario, String materia){
+    super(nome, idade, salario);
+    this.materia = materia;
 
   }
   @Override
-  public void trabalhando(){
-    System.out.println("Professor esta dando aula");
+  public void Fazer(){
+    System.out.println("Professor esta ensinando algebra");
   }
   public void aula(){
-    System.out.printlm("Profesor esta dando aula de Matematica");
+    System.out.println("Profesor esta dando aula de " + this.materia);
 
   }
 
